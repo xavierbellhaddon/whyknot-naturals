@@ -7,8 +7,14 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
+h2:first-of-type {
+    margin-top: 52px;
+}
+
 
 .navbar.scrolled {
     background-color: #c59c71;
 }
+
+
 
