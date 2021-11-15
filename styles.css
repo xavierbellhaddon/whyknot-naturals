@@ -7,10 +7,8 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
-.brand {
-    height: 1.5rem;
-}
 
 .navbar.scrolled {
     background-color: #c59c71;
 }
+
