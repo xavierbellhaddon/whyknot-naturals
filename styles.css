@@ -11,9 +11,13 @@ body:nth-child(2) {
     margin-top: 52px;
 }
 
-.navbar.scrolled {
-    background-color: #c59c71;
+.navbar {
+    background-color: white;
 }
+
+/* .navbar.scrolled {
+    background-color: #c59c71;
+} */
 
 
 
