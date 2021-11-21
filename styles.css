@@ -7,22 +7,99 @@ body {
     font-family: "Nunito", sans-serif;
 }
 
-body:nth-child(2) {
-    margin-top: 56px;
+/* NAVBAR STYLES */
+
+#mainNavbar {
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c59c71;
 }
 
-.navbar {
+#mainNavbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin-right: 1rem;
+    justify-content: space-around;
+}
+
+
+#mainNavbar ul li {
+    margin: 0 1rem;
+}
+
+#mainNavbar ul li a, #navbarBrand {
+    color: white;
+    text-decoration: none;
+}
+
+#mainNavbar ul li a.active, #mainNavbar ul li a:hover {
+    font-weight: 700;
+}
+
+#navbarBrand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+#hamburgerButton {
+    display: none;
+}
+
+#hamburgerButton div {
+    height: 3px;
+    width: 1.5rem;
+    margin: 5px 1rem;
     background-color: white;
 }
+
+@media (max-width: 700px) {
+    body {
+        overflow-x: hidden;
+    }
+    #mainNavbar ul {
+        top: 3rem;
+        right: 0;
+        margin: 0;
+        height: calc(100vh - 3rem);
+        width: 100%;
+        background-color: #c59c71;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        text-align: right;
+        transform: translateX(100%);
+    }
+    #mainNavbar ul li {
+        opacity: 0;
+    }
+    #hamburgerButton {
+        display: block;
+    }
+}
+
+/* END OF NAVBAR STYLES */
+
+
+/* body:nth-child(2) {
+    margin-top: 56px;
+} */
+
+/* .navbar {
+    background-color: white;
+} */
 
 /* .navbar.scrolled {
     background-color: #c59c71;
 } */
 
-.card {
+/* .card {
     width: 330px;
 }
 
 .card-body h5 {
     text-align: center;
-}
+} */
