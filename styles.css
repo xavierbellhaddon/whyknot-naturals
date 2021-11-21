@@ -17,7 +17,7 @@ body {
     background-color: #c59c71;
 }
 
-#mainNavbar ul {
+#navLinks {
     list-style: none;
     padding: 0;
     display: flex;
@@ -25,17 +25,16 @@ body {
     justify-content: space-around;
 }
 
-
-#mainNavbar ul li {
+#navLinks li {
     margin: 0 1rem;
 }
 
-#mainNavbar ul li a, #navbarBrand {
+#navLinks li a, #navbarBrand {
     color: white;
     text-decoration: none;
 }
 
-#mainNavbar ul li a.active, #mainNavbar ul li a:hover {
+#navLinks li a.active, #navLinks li a:hover {
     font-weight: 700;
 }
 
@@ -45,22 +44,23 @@ body {
     margin-left: 1rem;
 }
 
-#hamburgerButton {
+#burger {
     display: none;
+    cursor: pointer;
 }
 
-#hamburgerButton div {
+#burger div {
     height: 3px;
     width: 1.5rem;
     margin: 5px 1rem;
     background-color: white;
 }
 
-@media (max-width: 700px) {
+@media screen and (max-width: 700px) {
     body {
-        overflow-x: hidden;
+        overflow: hidden;
     }
-    #mainNavbar ul {
+    #navLinks {
         top: 3rem;
         right: 0;
         margin: 0;
@@ -72,14 +72,31 @@ body {
         align-items: center;
         text-align: right;
         transform: translateX(100%);
+        transition: transform 0.5s ease-in;
     }
-    #mainNavbar ul li {
+    #navLinks li {
         opacity: 0;
     }
-    #hamburgerButton {
+    #burger {
         display: block;
     }
 }
+
+#navLinks.nav-active {
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 
 /* END OF NAVBAR STYLES */
 
