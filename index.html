@@ -1,142 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WhyKnot Naturals</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WhyKnot Naturals</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" />
-  <!-- <link rel="stylesheet" href="OwlCarousel2-2.3.4 2/docs/assets/owlcarousel/assets/owl.carousel.css">
-  <link rel="stylesheet" href="OwlCarousel2-2.3.4 2/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
-  <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" /> -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-
-  <nav id="mainNavbar">
-    <a href="#" id="navbarBrand">WHYKNOT</a>
-    <ul id="navLinks">
-      <li><a href="#" class="active">HOME</a></li>
-      <li><a href="shop.html">SHOP</a></li>
-      <li><a href="order-tracking.html">TRACK ORDER</a></li>
-      <li><a href="our-story.html">OUR STORY</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-    <ul id="navLinksMin">
-      <li><a href="#" class="active">HOME</a></li>
-      <li><a href="shop.html">SHOP</a></li>
-      <li><a href="order-tracking.html">TRACK ORDER</a></li>
-      <li><a href="our-story.html">OUR STORY</a></li>
-      <li><a href="contact.html">CONTACT</a></li>
-    </ul>
-    <div id="burger">
-      <div class="line1"></div>
-      <div class="line2"></div>
-      <div class="line3"></div>
-    </div>
-  </nav>
-
-
-  <!-- <nav class="navbar navbar-expand-lg navbar-light text-nowrap fixed-top" id="mainNavbar">
-    <a href="#" class="navbar-brand" id="navbarBrand"> WHYKNOT </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks"
-      aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navLinks">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a href="#" class="nav-link">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a href="shop.html" class="nav-link">SHOP</a>
-        </li>
-        <li class="nav-item">
-          <a href="order-tracking.html" class="nav-link">ORDER TRACKING</a>
-        </li>
-        <li class="nav-item">
-          <a href="our-story.html" class="nav-link">OUR STORY</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">CONTACT</a>
-        </li>
+  <body>
+    <nav id="mainNavbar">
+      <a href="#" id="navbarBrand">WHYKNOT</a>
+      <ul id="navLinks">
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="order-tracking.html">TRACK ORDER</a></li>
+        <li><a href="our-story.html">OUR STORY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input type="search" class="form-control mr-sm-2" placeholder="Search" aria-label="Search" />
-        <button type="submit" class="btn btn-outline-success my-2 my-sm-0 pull-right">
-          Search
-        </button>
-      </form>
-    </div>
-  </nav>
+      <ul id="navLinksMin">
+        <li><a href="#" class="active">HOME</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="order-tracking.html">TRACK ORDER</a></li>
+        <li><a href="our-story.html">OUR STORY</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+      <div id="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
 
-  carousel -->
+    <img src="images/image-1.jpg" alt="" id="heroImage" />
 
-  <!-- <div class="owl-carousel owl-theme">
-    <div class="item">
-      <div class="card">
-        <img class="card-img-top" src="images/product-1.jpg" alt="">
-        <div class="card-body">
-          <h5 class="card-title">Coconut Shea Co-Wash</h5>
+    <section id="featuredItems">
+      <div class="featured-item-card">
+        <img src="images/product-1.jpg" alt="" />
+        <div>
+          <h3>Coconot Co-Wash</h3>
+          <p class="price">$15.99</p>
         </div>
       </div>
-    </div>
-    <div class="item">
-      <div class="card">
-        <img class="card-img-top" src="images/product-1.jpg" alt="">
-        <div class="card-body">
-          <h5 class="card-title">Dreamy Creamy Moisturize Me</h5>
+      <div class="featured-item-card">
+        <img src="images/product-2.jpg" alt="" />
+        <div>
+          <h3>Dreamy Creamy Moisturize Me</h3>
+          <p class="price">$16.99</p>
         </div>
       </div>
-    </div>
-    <div class="item">
-      <div class="card">
-        <img class="card-img-top" src="images/product-2.jpg" alt="">
-        <div class="card-body">
-          <h5 class="card-title">Honey Peppermint Conditioner</h5>
+      <div class="featured-item-card">
+        <img src="images/product-3.jpg" alt="" />
+        <div>
+          <h3>Come Grow with Me</h3>
+          <p class="price">$15.99</p>
         </div>
       </div>
-    </div>
-    <div class="item">
-      <div class="card">
-        <img class="card-img-top" src="images/product-3.jpg" alt="">
-        <div class="card-body">
-          <h5 class="card-title">Come Grow with Me Hair Oil</h5>
-        </div>
+    </section>
+
+    <section id="whoWeAre">
+      <img src="images/image-2.jpg" alt="" />
+      <div>
+        <h2>Who We Are</h2>
+        <p>
+          WhyKnot is a small, black-owned business that specializes in
+          all-natural hair and body care products. We cater to hair of all
+          textures and types; whether yours is natural, processed,
+          color-treated, or worn in a protective style, you can rest assured we
+          have something just for you.
+        </p>
       </div>
-    </div>
-</div> -->
-  <!-- /carousel -->
+    </section>
 
-  <h2>Who We Are</h2>
-  <p>
-    WhyKnot is a small, black-owned business that specializes in all-natural
-    hair and body care products. We cater to hair of all textures and types;
-    whether yours is natural, processed, color-treated, or worn in a
-    protective style, you can rest assured we have something just for you.
-  </p>
+    <h2>Shipping and Delivery</h2>
+    <p>
+      We're so excited that you decided to shop with us, and we're committed to
+      making sure that all of our customers receive their orders in a timely
+      manner. That being said, while we would love for our turnaround to be as
+      expiditious Amazon's, we're still a small business. We make our products
+      in small batches to ensure that they haven't spent months on the shelf by
+      the time they're delivered. Consequentially, most orders will be packaged
+      and shipped within five to seven business days. We greatly appreciate your
+      business and patience, and thank you from the bottom of our hearts.
+    </p>
 
-  <h2>Shipping and Delivery</h2>
-  <p>
-    We're so excited that you decided to shop with us, and we're committed to
-    making sure that all of our customers receive their orders in a timely
-    manner. That being said, while we would love for our turnaround to be as
-    expiditious Amazon's, we're still a small business. We make our products
-    in small batches to ensure that they haven't spent months on the shelf by
-    the time they're delivered. Consequentially, most orders will be packaged
-    and shipped within five to seven business days. We greatly appreciate your
-    business and patience, and thank you from the bottom of our hearts.
-  </p> 
+    <!-- testimonials -->
 
-  <!-- testimonials -->
-
-  <!-- footer -->
-
-  <!-- <script src="jquery-3.6.0.slim.min.js"></script>
-  <script src="OwlCarousel2-2.3.4 2/docs/assets/owlcarousel/owl.carousel.min.js"></script>
-  <script src="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script> -->
-  <script src="app.js"></script>
-</body>
-
+    <!-- footer -->
+    <script src="app.js"></script>
+  </body>
 </html>
