@@ -157,11 +157,10 @@ section h2 {
 
 /* HERO IMAGE */
 
-#heroImage {
+.hero-image {
     height: 100vh;
     width: 100vw;
     object-fit: cover;
-    margin-bottom: 0;
 }
 
 /* END OF HERO IMAGE */
@@ -173,7 +172,7 @@ section h2 {
     display: flex;
     /* justify-content: center; */
     /* align-items: center; */
-    background-color: #f3f3f3;
+    background-color: #eeeeee;
     padding: 3rem;
 }
 
@@ -213,8 +212,7 @@ section h2 {
     justify-content: center;
     padding: 3rem;
     color: white;
-    background-color: #c59c71;
-    color: white;
+    background-color: #a67d56;
 }
 
 #whoWeAre div, #whoWeAre img {
@@ -237,6 +235,7 @@ section h2 {
 
 #testimonials h2 {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 #testimonialCards {
@@ -269,6 +268,32 @@ section h2 {
 }
 
 /* END OF TESTIMONIALS */
+
+/* SHIPPING AND DELIVERY */
+
+#shippingAndDelivery {
+}
+
+#shippingAndDelivery img, #shippingAndDelivery div {
+    height: 100vh;
+    width: 50vw;
+}
+
+#shippingAndDelivery img {
+    object-fit: cover;
+}
+
+#shippingAndDelivery div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    color: white;
+    background-color: #f59332;
+}
+
+/* END OF SHIPPING AND DELIVERY */
 
 @media screen and (max-width: 700px) {
 
