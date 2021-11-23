@@ -82,7 +82,7 @@ section h2 {
     text-decoration: none;
 }
 
-#navLinks li a.active, #navLinks li a:hover {
+#navLinks li a.active, #navLinks li a:hover, #navLinksMin li a.active, #navLinksMin li a:hover {
     font-weight: 700;
 }
 
@@ -171,13 +171,17 @@ section h2 {
 #featuredItems {
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color: #c59c71; */
+    /* justify-content: center; */
+    /* align-items: center; */
     background-color: #f3f3f3;
+    padding: 3rem;
 }
 
-#featuredItems div {
+#featuredItems h2 {
+    text-align: center;
+}
+
+/* #featuredItems div {
     padding: 1rem;
 }
 
@@ -186,7 +190,6 @@ section h2 {
 }
 
 #featuredItems img {
-    height: auto;
     width: 100%;
 }
 
@@ -197,7 +200,7 @@ section h2 {
     background-color: white;
     border-radius: 0.3rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
+}  */
 
 /* END OF FEATURED ITEMS */
 
@@ -221,16 +224,61 @@ section h2 {
 
 /* END OF WHO WE ARE */
 
+/* TESTIMONIALS */
+
+#testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #eeeeee;
+}
+
+#testimonials h2 {
+    text-align: center;
+}
+
+#testimonialCards {
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonial-card {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    border-radius: 0.2rem;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    margin: 0 1rem;
+}
+
+.testimonial-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    align-self: center;
+    margin: 2rem 0;
+}
+
+.testimonial-name {
+    font-weight: 700;
+}
+
+/* END OF TESTIMONIALS */
+
 @media screen and (max-width: 700px) {
 
+    /* HERO IMAGE */
     #heroImage {
         height: unset;
     }
-    /* SECTION MEDIA QUERIES */
-    
-    /* END OF SECTION MEDIA QUERIES */
+    /* END OF HERO IMAGE */
 
-    /* NAV MEDIA QUERIES */
+    /* NAV */
     #navLinks {
         display: none;
     }
@@ -243,7 +291,9 @@ section h2 {
     #burger {
         display: block;
     }
-    /* END OF NAV MEDIA QUERIES */
+    /* END OF NAV */
+
+    /* WHO WE ARE */
 
     #whoWeAre {
         flex-direction: column;
@@ -253,6 +303,7 @@ section h2 {
         height: 100vh;
         width: 100vw;
     }
+    /* END OF WHO WE ARE */
 
 
 }
