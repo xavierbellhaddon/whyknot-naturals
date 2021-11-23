@@ -301,9 +301,6 @@ section h2 {
     #heroImage {
         height: unset;
     }
-    /* END OF HERO IMAGE */
-
-    /* NAV */
     #navLinks {
         display: none;
     }
@@ -316,19 +313,14 @@ section h2 {
     #burger {
         display: block;
     }
-    /* END OF NAV */
 
-    /* WHO WE ARE */
-
-    #whoWeAre {
+    #whoWeAre, #shippingAndDelivery {
         flex-direction: column;
     }
-    
-    #whoWeAre img, #whoWeAre div {
+    #whoWeAre img, #whoWeAre div, #shippingAndDelivery img, #shippingAndDelivery div {
         height: 100vh;
         width: 100vw;
     }
-    /* END OF WHO WE ARE */
 
 
 }
