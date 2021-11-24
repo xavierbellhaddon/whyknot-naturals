@@ -26,25 +26,10 @@ section img {
     display: inline-block;
 }
 
-/* section div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3rem;
-    color: white; */
-    /* background-color: #c59c71; */
-/* } */
-
 section h2 {
     margin-bottom: 2rem;
     width: 100%;
 }
-
-/* section img, section div {
-    height: 100vh;
-    width: 50vw;
-} */
 
 /* END OF SECTION STYLES */
 
@@ -183,10 +168,9 @@ section h2 {
 #featuredItems {
     height: 100vh;
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center;
+    align-items: center;
     background-color: #eeeeee;
-    padding: 3rem;
 }
 
 #featuredItems h2 {
@@ -238,12 +222,15 @@ section h2 {
 /* TESTIMONIALS */
 
 #testimonials {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #eeeeee;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 100vh;
-    background-color: #eeeeee;
+    height: min-content;
+    padding: 2rem;
 }
 
 #testimonials h2 {
@@ -254,19 +241,30 @@ section h2 {
 #testimonialCards {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
 }
 
 .testimonial-card {
-    display: flex;
-    flex-direction: column;
-    height: 400px;
-    width: 300px;
+    width: 20%;
+    min-width: 300px; 
     border-radius: 0.2rem;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 1rem;
     padding: 1rem;
-    margin: 0 1rem;
 }
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* ^^^ might have to add this class to featured items too */
 
 .testimonial-image {
     width: 150px;
@@ -317,7 +315,7 @@ section h2 {
     align-self: center;
     margin-right: 2rem;
     border-radius: 0.2rem;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #ourStory div {
@@ -330,6 +328,8 @@ section h2 {
 }
 
 /* END OF OUR STORY */
+
+/* MEDIA QUERIES */
 
 @media screen and (max-width: 700px) {
 
@@ -357,10 +357,9 @@ section h2 {
         height: 100vh;
         width: 100vw;
     }
-
-
 }
 
+/* END OF MEDIA QUERIES */
 
 
 
@@ -371,3 +370,15 @@ section h2 {
 
 
 
+/* .hero-container {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 100;
+}
+
+.some-text {
+    position: absolute;
+    bottom: 5rem;
+    left: 3rem;
+} */
