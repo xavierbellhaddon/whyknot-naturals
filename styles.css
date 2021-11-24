@@ -79,6 +79,7 @@ section h2 {
 #navLinks li a, #navLinksMin li a, #navbarBrand {
     color: white;
     text-decoration: none;
+    text-transform: uppercase;
 }
 
 #navLinks li a.active, #navLinks li a:hover, #navLinksMin li a.active, #navLinksMin li a:hover {
@@ -106,6 +107,7 @@ section h2 {
 #navbarBrand {
     font-size: 1.5rem;
     font-weight: 700;
+    text-transform: uppercase;
     margin-left: 1rem;
 }
 
@@ -278,8 +280,6 @@ section h2 {
     flex-direction: column;
     width: 100%;
 }
-
-/* ^^^ might have to add this class to featured items too */
 
 .testimonial-image {
     width: 150px;
