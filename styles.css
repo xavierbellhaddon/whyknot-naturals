@@ -166,11 +166,15 @@ section h2 {
 /* FEATURED ITEMS */
 
 #featuredItems {
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #eeeeee;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #eeeeee;
+    height: min-content;
+    padding: 2rem;
 }
 
 #featuredItems h2 {
@@ -183,20 +187,31 @@ section h2 {
 
 #featuredItems div h3, #featuredItems div p {
     color: black;
+} */
+
+#featuredItemCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
 }
 
-#featuredItems img {
+.featured-item-image {
     width: 100%;
-}
+} 
 
 .featured-item-card {
-    width: 265.77px;
-    height: 377.77px;
-    margin: 1rem;
+    width: 20%;
+    min-width: 300px; 
+    border-radius: 0.2rem;
     background-color: white;
-    border-radius: 0.3rem;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}  */
+    margin: 1rem;
+    padding: 1rem;
+} 
 
 /* END OF FEATURED ITEMS */
 
